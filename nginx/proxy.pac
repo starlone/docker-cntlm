@@ -2,7 +2,7 @@ function FindProxyForURL(url, host) {
   if (
     dnsDomainIs(host, "localhost.bb.com.br") ||
     dnsDomainIs(host, "localhost.desenv.bb.com.br") ||
-    dnsDomainIs(host, "localhost.estatico.com.br")
+    dnsDomainIs(host, "localhost.estatico.bb.com.br")
   ) return "DIRECT";
 
   if (
