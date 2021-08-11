@@ -1,6 +1,5 @@
 
 FROM nginx
-
 COPY nginx /usr/share/nginx/html
 
 RUN apt-get update && apt-get install -y \
@@ -9,5 +8,7 @@ RUN apt-get update && apt-get install -y \
     vim \
     && rm -rf /var/lib/apt/lists/*
 
-CMD ["service", "cntlm", "restart"]
-CMD cntlm -v
+ADD start.sh /start.sh
+RUN chmod +x /start.sh
+
+CMD ["/start.sh"]
