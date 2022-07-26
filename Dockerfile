@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     openconnect \
     cntlm \
     vim \
+    ssh \
     && rm -rf /var/lib/apt/lists/*
 
 ADD start.sh /start.sh
