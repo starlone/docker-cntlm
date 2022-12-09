@@ -12,11 +12,6 @@ Execute o seguinte comando para entrar na VPN
 docker exec -it --privileged docker-cntlm_proxy_1 openconnect
 ```
 
-Depois que o container iniciar, é necessário reiniciar o cntlm para carregar o arquivo personalizado
-```
-docker exec -it docker-cntlm_proxy_1 service cntlm restart
-```
-
 Adicione nas configurações de proxy a seguinte url 
 
 ```
