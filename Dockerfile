@@ -1,5 +1,5 @@
 
-FROM nginx
+FROM nginx:1.24
 COPY nginx /usr/share/nginx/html
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
